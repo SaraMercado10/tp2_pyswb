@@ -1,0 +1,29 @@
+:root {
+  --bg: #dbeafe;
+  --text: #0f172a;
+
+  --primary: #2563eb;
+
+  --card-bg: #eff6ff;
+
+  --header-bg: #bfdbfe;
+  --footer-bg: #bfdbfe;
+
+  --footer-text: #0f172a;
+
+  --shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Modo Oscuro */
+body.dark {
+  --bg: #020617;
+  --text: #e2e8f0;
+
+  --card-bg: #0f172a;
+
+  /* 🔥 contraste real */
+  --header-bg: #020617;
+  --footer-bg: #000000;
+
+  --footer-text: #cbd5f5;
+}
