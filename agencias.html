@@ -1,290 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo - Agencias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Turismo</a>
-        <button id="darkModeToggle" class="btn btn-sm btn-light rounded-circle me-3"><i class="bi bi-moon-stars"></i></button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
-                <li class="nav-item"><a class="nav-link active" href="agencias.html">Agencias</a></li>
-                <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-outline-warning btn-sm ms-lg-3 text-dark fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#modalPhishing"><i class="bi bi-shield-exclamation"></i> Simulación Phishing</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<main class="container my-5">
-    <h2 class="text-center mb-5">Agencias de Viaje</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <!-- Agencia 1 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <!-- Frente -->
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a1.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Travel Pro</h3>
-                        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Turismo - Agencias</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/components.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Turismo</a>
+                <button id="darkModeToggle" class="btn btn-sm btn-light rounded-circle me-3"><i class="bi bi-moon-stars"></i></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="agencias.html">Agencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-warning btn-sm ms-lg-3 text-dark fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#modalPhishing"><i class="bi bi-shield-exclamation"></i> Simulación Phishing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5">
+            <h2 class="text-center mb-5">Agencias de Viaje</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a1.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Travel Pro</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Especialistas en viajes internacionales</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Dorso -->
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Especialistas en viajes internacionales</p>
-                        <!-- Sistema de Rating -->
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a2.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Explora</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Viajes de aventura y naturaleza</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a3.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">World Tours</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Destinos en todo el mundo</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a4.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Eco Travel</h3> 
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Turismo sustentable</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a5.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Luxury Trips</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Experiencias premium</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a6.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Sky Travel</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Especialistas en viajes aéreos y vuelos económicos</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a7.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Go Travel</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Viajes económicos y accesibles</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-inner shadow-lg">
+                            <div class="flip-front bg-white rounded-4 overflow-hidden">
+                                <img src="assets/images/a8.png" class="w-100">
+                                <h3 class="h5 p-3 text-primary fw-bold">Adventure Plus</h3>
+                            </div>
+                            <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
+                                <p class="px-3">Experiencias extremas y turismo de aventura</p>
+                                <div class="rating-stars fs-3 mt-3">
+                                    <i class="bi bi-star" data-value="1"></i>
+                                    <i class="bi bi-star" data-value="2"></i>
+                                    <i class="bi bi-star" data-value="3"></i>
+                                    <i class="bi bi-star" data-value="4"></i>
+                                    <i class="bi bi-star" data-value="5"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Agencia 2 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a2.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Explora</h3>
-                        
+        </main>
+        <div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title"><i class="bi bi-bug-fill"></i> Módulo Educativo: Phishing</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Viajes de aventura y naturaleza</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
+                    <div class="modal-body">
+                        <p class="alert alert-warning"><strong><i class="bi bi-exclamation-triangle"></i> IMPORTANTE:</strong> Esto es una simulación. No ingreses datos reales.</p>
+                        <h6>Ejemplo de mensaje sospechoso:</h6>
+                        <div class="card bg-light p-3 mb-3 border-danger">
+                            <p class="small mb-0">"Urgente: Su cuenta de <strong>Turismo Pro</strong> ha sido suspendida. Haga clic <a href="#">aquí</a> para reactivarla o perderá sus reservas."</p>
                         </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agencia 3 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a3.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">World Tours</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Destinos en todo el mundo</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
+                        <h6>Identifica las señales de fraude:</h6>
+                        <ul class="small text-muted">
+                            <li>Sentido de urgencia exagerado.</li>
+                            <li>Links que no dirigen al sitio oficial.</li>
+                            <li>Errores de ortografía.</li>
+                        </ul>
+                        <hr>
+                        <p class="text-center fw-bold">¿Es seguro este mensaje?</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success" id="btnSeguro">Sí, es seguro</button>
+                            <button class="btn btn-danger" id="btnFraude">No, es fraude</button>
                         </div>
-                        
+                        <div id="phishingFeedback" class="mt-3 text-center fw-bold" style="display:none;"></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Agencia 4 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a4.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Eco Travel</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Turismo sustentable</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
-                        </div>
-                        
-                    </div>
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <div class="container text-center">
+                <p class="mb-1">© 2026 Turismo - Sara Mercado</p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <a href="#" class="sprite-social fb" title="Facebook"></a>
+                    <a href="#" class="sprite-social ig" title="Instagram"></a>
+                    <a href="#" class="sprite-social tw" title="Twitter"></a>
                 </div>
             </div>
-        </div>
-
-        <!-- Agencia 5 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a5.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Luxury Trips</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Experiencias premium</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agencia 6 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a6.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Sky Travel</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Especialistas en viajes aéreos y vuelos económicos</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agencia 7 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a7.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Go Travel</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Viajes económicos y accesibles</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agencia 8 -->
-        <div class="col">
-            <div class="flip-card">
-                <div class="flip-inner shadow-lg">
-                    <div class="flip-front bg-white rounded-4 overflow-hidden">
-                        <img src="assets/images/a8.png" class="w-100">
-                        <h3 class="h5 p-3 text-primary fw-bold">Adventure Plus</h3>
-                        
-                    </div>
-                    <div class="flip-back bg-primary text-white d-flex flex-column justify-content-center align-items-center rounded-4">
-                        <p class="px-3">Experiencias extremas y turismo de aventura</p>
-                        <div class="rating-stars fs-3 mt-3">
-                            <i class="bi bi-star" data-value="1"></i>
-                            <i class="bi bi-star" data-value="2"></i>
-                            <i class="bi bi-star" data-value="3"></i>
-                            <i class="bi bi-star" data-value="4"></i>
-                            <i class="bi bi-star" data-value="5"></i>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-
-<!-- MODAL EDUCATIVO DE PHISHING -->
-<div class="modal fade" id="modalPhishing" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="bi bi-bug-fill"></i> Módulo Educativo: Phishing</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p class="alert alert-warning"><strong><i class="bi bi-exclamation-triangle"></i> IMPORTANTE:</strong> Esto es una simulación. No ingreses datos reales.</p>
-                
-                <h6>Ejemplo de mensaje sospechoso:</h6>
-                <div class="card bg-light p-3 mb-3 border-danger">
-                    <p class="small mb-0">"Urgente: Su cuenta de <strong>Turismo Pro</strong> ha sido suspendida. Haga clic <a href="#">aquí</a> para reactivarla o perderá sus reservas."</p>
-                </div>
-
-                <h6>Identifica las señales de fraude:</h6>
-                <ul class="small text-muted">
-                    <li>Sentido de urgencia exagerado.</li>
-                    <li>Links que no dirigen al sitio oficial.</li>
-                    <li>Errores de ortografía.</li>
-                </ul>
-
-                <hr>
-                <p class="text-center fw-bold">¿Es seguro este mensaje?</p>
-                <div class="d-flex justify-content-center gap-2">
-                    <button class="btn btn-success" id="btnSeguro">Sí, es seguro</button>
-                    <button class="btn btn-danger" id="btnFraude">No, es fraude</button>
-                </div>
-                <!-- Feedback con jQuery -->
-                <div id="phishingFeedback" class="mt-3 text-center fw-bold" style="display:none;"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- FOOTER -->
-<footer class="bg-dark text-white pt-5 pb-3">
-    <div class="container text-center">
-        <p class="mb-1">© 2026 Turismo - Sara Mercado</p>
-        <!-- REQUISITO: Sprite CSS -->
-        <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="#" class="sprite-social fb" title="Facebook"></a>
-            <a href="#" class="sprite-social ig" title="Instagram"></a>
-            <a href="#" class="sprite-social tw" title="Twitter"></a>
-        </div>
-    </div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

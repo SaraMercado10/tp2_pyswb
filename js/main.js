@@ -1,9 +1,7 @@
-// MODO OSCURO
 const toggle = document.getElementById("darkModeToggle");
 if(toggle) {
     toggle.addEventListener("click", () => {
         document.body.classList.toggle("dark");
-        // Cambiar icono según el modo
         const icon = toggle.querySelector("i");
         if(document.body.classList.contains("dark")) {
             icon.classList.replace("bi-moon-stars", "bi-sun");
@@ -13,7 +11,6 @@ if(toggle) {
     });
 }
 
-// CONTADOR ANIMADO
 const contador = document.getElementById("contador");
 let iniciado = false;
 
@@ -38,9 +35,7 @@ const animarContador = () => {
 };
 
 window.addEventListener("scroll", animarContador);
-//window.addEventListener("load", animarContador);
 
-// FILTROS DE DESTINOS
 document.addEventListener("DOMContentLoaded", () => {
     const botones = document.querySelectorAll(".filtro-btn");
     const destinos = document.querySelectorAll(".destino");
@@ -49,14 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
         boton.addEventListener("click", () => {
             const filtro = boton.dataset.filter;
 
-            // Cambiar estado activo de botones
             botones.forEach(b => b.classList.remove("active"));
             boton.classList.add("active");
 
-            // Lógica de filtrado
             destinos.forEach(dest => {
                 if (filtro === "all" || dest.classList.contains(filtro)) {
-                    dest.classList.remove("d-none"); // Clase de Bootstrap
+                    dest.classList.remove("d-none");
                     dest.style.display = "block";
                 } else {
                     dest.classList.add("d-none");
@@ -68,16 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 $(document).ready(function() {
-    
-    // SISTEMA DE RATING con jQuery (Esto sí lo mantienes)
     $('.rating-stars i').on('click', function() {
         let value = $(this).data('value'); 
         let parent = $(this).parent(); 
-
-        // Limpiar estrellas
         parent.find('i').removeClass('active bi-star-fill').addClass('bi-star');
-
-        // Pintar hasta la estrella clickeada
         parent.find('i').each(function() {
             if ($(this).data('value') <= value) {
                 $(this).addClass('active bi-star-fill').removeClass('bi-star');
@@ -88,15 +75,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    
-    // ACTIVAR TOOLTIPS DE BOOTSTRAP
-    // Esta línea busca todos los elementos con data-bs-toggle="tooltip" y los inicializa
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     });
 
-    // HOVER DINÁMICO EXTRA (Opcional con jQuery)
     $('.table-hover tbody tr').hover(
         function() {
             $(this).css('transition', 'all 0.3s');
@@ -110,14 +94,11 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    
-    // 1. INICIALIZAR ANIMACIONES AL HACER SCROLL
     AOS.init({
-        duration: 800, // Duración de la animación en ms
-        once: true     // Que la animación solo ocurra una vez
+        duration: 800,
+        once: true
     });
 
-    // 2. FILTRO DE BLOG CON JQUERY
     $('.filter-blog').on('click', function() {
         const filter = $(this).data('filter');
         
@@ -132,8 +113,6 @@ $(document).ready(function() {
         }
     });
 
-
-    // 3. COMENTARIOS SIMULADOS
     $('#commentForm').on('submit', function(e) {
         e.preventDefault();
         const text = $('#commentText').val();
@@ -154,7 +133,6 @@ $(document).ready(function() {
     });
 });
 
-// validación en tiempo real
 $('.contactoo input, .contactoo textarea').on('input', function() {
     if ($(this).val().trim() === "") {
         $(this).addClass('is-invalid').removeClass('is-valid');
@@ -168,7 +146,6 @@ $('.contactoo').on('submit', function(e) {
 
     let valido = true;
 
-    // recorrer todos los campos
     $('.contactoo input, .contactoo textarea').each(function() {
         if ($(this).val().trim() === "") {
             $(this).addClass('is-invalid').removeClass('is-valid');
@@ -176,10 +153,7 @@ $('.contactoo').on('submit', function(e) {
         }
     });
 
-    // si hay algo vacío → NO sigue
     if (!valido) return;
-
-    // ✔ todo completo → mostrar spinner
     $('#spinner').removeClass('d-none');
 
     setTimeout(() => {
@@ -189,31 +163,12 @@ $('.contactoo').on('submit', function(e) {
         modal.show();
     }, 1500);
 });
-// cerrar modal
+
 $('#cerrarModal').on('click', function() {
     $('#modal').fadeOut();
 });
 
-//pishing
-/*
 $(document).ready(function() {
-
-  $("#btnSeguro").click(function() {
-    $("#resultado")
-      .text("❌ Incorrecto. Este es un intento de phishing.")
-      .css("color", "red");
-  });
-
-  $("#btnNoSeguro").click(function() {
-    $("#resultado")
-      .text("✔ Correcto. Es un mensaje de phishing.")
-      .css("color", "green");
-  });
-
-});*/
-$(document).ready(function() {
-    
-    // Validación en tiempo real del email del footer
     $('#emailFooter').on('input', function() {
         const email = $(this).val();
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -224,13 +179,9 @@ $(document).ready(function() {
             $(this).addClass('is-invalid').removeClass('is-valid');
         }
     });
-
-    // Sanitización al enviar el formulario
     $('#formFooter').on('submit', function(e) {
         e.preventDefault();
         let emailRaw = $('#emailFooter').val();
-        
-        // REQUISITO: Sanitización (quitamos caracteres sospechosos)
         let emailLimpio = emailRaw.replace(/[<>]/g, ""); 
         
         alert("¡Gracias por suscribirte! Tu correo " + emailLimpio + " ha sido registrado.");
@@ -240,9 +191,6 @@ $(document).ready(function() {
 
 });
 $(document).ready(function() {
-    // Función para mostrar el feedback en el modal de phishing
-    // Usamos jQuery para capturar los clics en los botones de la imagen
-    
     $('#btnSeguro').on('click', function() {
         $('#phishingFeedback').hide()
             .html('<div class="alert alert-danger mt-3 animate__animated animate__shakeX">' +
@@ -261,26 +209,19 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    // 1. Validación en tiempo real (Cambia color mientras escribís)
     $('#emailFooter').on('input', function() {
         const email = $(this).val();
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular básica
-        
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (regex.test(email)) {
             $(this).addClass('is-valid').removeClass('is-invalid');
         } else {
             $(this).addClass('is-invalid').removeClass('is-valid');
         }
     });
-
-    // 2. Sanitización al enviar (Evita que inyecten código malicioso)
     $('#formFooter').on('submit', function(e) {
         e.preventDefault();
         let emailSucio = $('#emailFooter').val();
-        
-        // REQUISITO: Sanitización (eliminamos etiquetas < > y comillas)
         let emailLimpio = emailSucio.replace(/[<>'"\/]/g, ""); 
-        
         alert("¡Gracias! El correo " + emailLimpio + " fue registrado con éxito.");
         this.reset();
         $(this).find('.form-control').removeClass('is-valid');

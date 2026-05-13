@@ -1,4 +1,3 @@
-/* EFECTO HOVER PARA CARDS */
 .card-custom, .destino-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -18,7 +17,6 @@
     transform: scale(1.1);
 }
 
-/* FORZAR VARIABLES EN MODO OSCURO PARA BOOTSTRAP */
 body.dark {
     background-color: var(--bg) !important;
     color: var(--text) !important;
@@ -38,16 +36,11 @@ body.dark .table {
     color: var(--text);
 }
 
-/*body.dark .table td, body.dark .table th {
-    background-color: var(--card-bg) !important;
-    color: var(--text) !important;
-}
-*/
 body.dark .table tbody td {
     background-color: var(--card-bg) !important;
     color: var(--text) !important;
 }
-/* Mantener filas resaltadas en modo oscuro */
+
 body.dark .table tbody tr.table-info td {
     background-color: #b3e5fc !important;
     color: black !important;
@@ -55,16 +48,15 @@ body.dark .table tbody tr.table-info td {
 body.dark .fw-bolder{
     color: black !important;
 }
-/* BOTONES DE FILTRO ACTIVOS */
+
 .filtro-btn.active {
     background-color: var(--primary) !important;
     color: white !important;
 }
 
-/* FLIP CARDS AL PASAR EL MOUSE - VERSIÓN COMPACTA (4 por fila) */
 .flip-card {
     perspective: 1000px;
-    height: 280px; /* Altura reducida para que entren 4 bien */
+    height: 280px;
     margin-bottom: 20px;
 }
 
@@ -87,40 +79,32 @@ body.dark .fw-bolder{
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,0.1); /* Un borde sutil para que se distingan */
+    border: 1px solid rgba(0,0,0,0.1); 
 }
 .flip-front {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Esto empuja el texto hacia abajo */
+    justify-content: space-between; 
     background-color: var(--card-bg);
     height: 100%;
 }
 
-/* Ajuste de la imagen frontal para que sea más chica */
 .flip-front img {
     height: 160px !important; 
     object-fit: cover;
     width: 100%;
 }
 
-/* Ajuste de los títulos frontales */
-/*.flip-front h3 {
-    font-size: 1.1rem; /* Texto un poco más pequeño 
-    padding: 10px !important;
-    margin: 0;
-}*/
-
 .flip-front h3 {
     font-size: 1.1rem;
-    padding-bottom: 20px !important; /* Le damos aire abajo para que no toque el borde */
-    margin-top: auto; /* Fuerza al título a irse lo más abajo posible */
+    padding-bottom: 20px !important;
+    margin-top: auto;
     color: var(--primary);
     font-weight: bold;
 }
 .flip-back {
     transform: rotateY(180deg);
-    background-color: var(--primary); /* Aseguramos que el dorso tenga color */
+    background-color: var(--primary);
     color: white;
     display: flex;
     flex-direction: column;
@@ -130,13 +114,12 @@ body.dark .fw-bolder{
 }
 
 .flip-back p {
-    font-size: 0.85rem; /* Párrafo más pequeño para que quepa en el dorso */
+    font-size: 0.85rem;
     margin-bottom: 10px;
 }
 
-/* Estrellas */
 .rating-stars {
-    font-size: 1.2rem; /* Tamaño de estrellas ajustado */
+    font-size: 1.2rem;
 }
 
 .rating-stars i {
@@ -149,23 +132,20 @@ body.dark .fw-bolder{
     color: gold;
 }
 
-/* ESTILOS PARA LA TABLA DE PRECIOS */
 .table-primary {
-    --bs-table-bg: #0d6efd !important; /* azul Bootstrap */
+    --bs-table-bg: #0d6efd !important;
     --bs-table-color: white !important;
 }
 
 .table-hover tbody tr:hover {
-    background-color: #e3f2fd !important; /* Celeste muy clarito al pasar el mouse */
+    background-color: #e3f2fd !important;
     transition: 0.3s;
 }
 
-/* Redondear bordes de la tabla */
 .rounded-4 {
     border-radius: 1rem !important;
 }
 
-/* Badge personalizado */
 .badge {
     font-weight: 500;
     padding: 0.5em 1em;
@@ -186,10 +166,9 @@ body.dark .fw-bolder{
     padding-top: 20px;
 }
 
-/* REQUISITO: Sprite CSS */
 .sprite-social {
     display: block;
-    width: 32px;  /* Tamaño del cuadradito del icono */
+    width: 32px;
     height: 32px;
     background-image: url('../assets/images/sprite-redes.png');
     background-repeat: no-repeat;
@@ -201,55 +180,39 @@ body.dark .fw-bolder{
     
 }
 
-/* Posiciones exactas dentro de la imagen sprite */
 .fb { background-position: 0 0; }
 .ig { background-position: -32px 0; }
 .tw { background-position: -64px 0; }
 
-/* =========================================
-   TAMAÑOS UNIFORMES PARA CARDS
-========================================= */
-
-/* DESTINOS */
 .destino-card img {
     height: 250px;
     object-fit: cover;
 }
 
-/* AGENCIAS */
 .flip-front img {
     height: 220px;
     object-fit: cover;
 }
 
-/* BLOG - imágenes grandes */
 .post-item .card-img-top {
     object-fit: cover;
 }
 
-/* Imagen principal del blog */
 .col-lg-8 .card-img-top {
     height: 450px;
 }
 
-/* Imágenes laterales y pequeñas */
 .col-lg-4 .card-img-top,
 .col-md-6 .card-img-top,
 .col-lg-3 .card-img-top {
     height: 160px;
 }
 
-/* =========================================
-   BLOG FIX FILTRO (SIN CAMBIAR DISEÑO)
-========================================= */
-
-/* Hace que Bootstrap reacomode bien al ocultar elementos */
 #blog-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* IMPORTANTE: mantiene comportamiento de columnas */
 #blog-container > .col-lg-8,
 #blog-container > .col-lg-4,
 #blog-container > .col-md-6,
@@ -257,12 +220,10 @@ body.dark .fw-bolder{
     display: block;
 }
 
-/* Evita saltos visuales raros al filtrar */
 .post-item {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Cuando está oculto (por JS o Bootstrap) */
 .post-item.d-none {
     display: none !important;
 }
